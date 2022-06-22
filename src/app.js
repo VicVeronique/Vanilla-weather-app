@@ -45,7 +45,6 @@ function formatDate(timestamp) {
 }
 
 function showTemp(response) {
-  console.log(response.data);
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
   let tempElement = document.querySelector(".temp");
@@ -70,8 +69,20 @@ function showTemp(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "6243bd378295e87dcd4f90e3e23db829";
-let city = "toronto";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "6243bd378295e87dcd4f90e3e23db829";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(showTemp);
+  axios.get(apiUrl).then(showTemp);
+}
+
+function searchSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Zvenyhorod");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", searchSubmit);
