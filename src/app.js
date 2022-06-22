@@ -62,6 +62,11 @@ function showTemp(response) {
   dayElement.innerHTML = formatDay(response.data.dt * 1000);
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    "http://openweathermap.org/img/wn/10d@2x.png"
+  );
 }
 
 let apiKey = "6243bd378295e87dcd4f90e3e23db829";
