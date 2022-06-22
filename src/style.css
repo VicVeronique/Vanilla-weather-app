@@ -1,4 +1,11 @@
-h1 {
-  text-align: center;
-  color: blueviolet;
+body {
+  background: linear-gradient(
+    110.5deg,
+    rgba(248, 196, 249, 0.36) 22.8%,
+    rgba(253, 122, 4, 0.07) 64.6%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
