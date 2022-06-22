@@ -51,12 +51,14 @@ li {
 }
 
 .weather-img {
+  height: 90px;
   width: 90px;
-  height: 60px;
+  margin-top: -17px;
+  margin-left: -5px;
 }
 
 .units {
-  margin-left: 5px;
+  margin-left: 1px;
   margin-top: 10px;
 }
 
