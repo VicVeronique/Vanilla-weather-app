@@ -13,8 +13,9 @@ body {
 
 .weather-app {
   padding: 35px;
-  border: 1px solid hsl(286, 31%, 41%);
+  border: 0px solid rgb(147, 98, 147);
   border-radius: 5px;
+  background-color: rgba(122, 72, 137, 0.1);
 }
 
 .weather-app-wrap {
@@ -27,10 +28,10 @@ body {
 }
 
 h1 {
-  color: rgb(152, 101, 181);
+  color: white;
   font-size: 44px;
-  font-weight: 100;
-  line-height: 30px;
+  text-shadow: hsl(0, 0%, 0%);
+  line-height: 40px;
 }
 
 ul {
@@ -42,15 +43,15 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(105, 82, 126);
+  color: rgb(137, 115, 159);
   font-size: 16px;
   font-weight: 100;
   line-height: 18px;
 }
 
 .weather-img {
-  width: 80px;
-  margin-top: -12px;
+  width: 90px;
+  height: 60px;
 }
 
 .units {
