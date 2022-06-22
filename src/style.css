@@ -68,3 +68,7 @@ li {
 .temp {
   font-size: 38px;
 }
+
+.seconds {
+  text-transform: lowercase;
+}
