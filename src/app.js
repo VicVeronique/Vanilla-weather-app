@@ -52,8 +52,7 @@ function showTemp(response) {
 
   let tempElement = document.querySelector(".temp");
   tempElement.innerHTML = Math.round(response.data.main.temp);
-  let feelElement = document.querySelector("#feels-like");
-  feelElement.innerHTML = Math.round(response.data.main.feels_like);
+
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
@@ -89,12 +88,18 @@ function fahrenheitChange(event) {
   event.preventDefault();
   let tempElement = document.querySelector(".temp");
   tempElement.innerHTML = Math.round((celsiusTemp * 9) / 5 + 32);
+  // replace class
+  celsiusLink.classList.replace("active", "passive");
+  fahrenheitLink.classList.replace("passive", "active");
 }
 
 function celsiusChange(event) {
   event.preventDefault();
   let tempElement = document.querySelector(".temp");
   tempElement.innerHTML = Math.round(celsiusTemp);
+  // replace class
+  celsiusLink.classList.replace("passive", "active");
+  fahrenheitLink.classList.replace("active", "passive");
 }
 
 let celsiusTemp = null;

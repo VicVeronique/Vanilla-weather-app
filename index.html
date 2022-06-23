@@ -12,6 +12,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
+    <script src="https://kit.fontawesome.com/26ca276c9e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -23,7 +24,10 @@
               <div class="overview">
                 <h1 id="city"></h1>
                 <ul>
-                  <li>Last updated: <span id="day-time"></span></li>
+                  <li>
+                    <span class="updated">Last updated:</span>
+                    <span id="day-time"></span>
+                  </li>
                   <li id="date"></li>
                 </ul>
               </div>
@@ -59,9 +63,9 @@
                       <li>
                         <strong class="temp"></strong>
                         <small class="temp-units">
-                          <a href="" id="celcius-link">°C</a>
+                          <a href="" id="celcius-link" class="active">°C</a>
                           |
-                          <a href="" id="fahrenheit-link">°F</a>
+                          <a href="" id="fahrenheit-link" class="passive">°F</a>
                         </small>
                       </li>
                       <li id="description"></li>
@@ -72,10 +76,10 @@
             </div>
             <div class="col-5">
               <ul>
-                <li>Feels like: <span id="feels-like"></span>°C</li>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>
-                  Wind: <span id="wind"></span
+                
+                <li class="extra"><i class="fa-solid fa-droplet sign"> </i> <span class="sign-extra"> humidity: </span> <span id="humidity"></span>%</li>
+                <li class="extra">
+                  <i class="fa-solid fa-wind sign"> </i><span class="sign-extra"> wind: </span><span id="wind"></span
                   ><span class="seconds"> km/h</span>
                 </li>
               </ul>
@@ -86,9 +90,16 @@
               <a
                 href="https://github.com/VicVeronique/Vanilla-weather-app.git"
                 target="_blank"
+                class="open-source"
                 >Open-source code</a
               >
-              by Vicveronique
+              by <span id="author">Vicveronique</span> <br />
+              Hosted on
+              <a 
+              href="https://www.netlify.com/"
+              target="_blank"
+              class="open-source" 
+              ">Netlify</a>
             </small>
           </div>
         </div>
