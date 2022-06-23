@@ -47,6 +47,9 @@ function formatDate(timestamp) {
 function showTemp(response) {
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
+
+  celsiusTemp = response.data.main.temp;
+
   let tempElement = document.querySelector(".temp");
   tempElement.innerHTML = Math.round(response.data.main.temp);
   let feelElement = document.querySelector("#feels-like");
@@ -82,7 +85,27 @@ function searchSubmit(event) {
   search(cityInputElement.value);
 }
 
+function fahrenheitChange(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector(".temp");
+  tempElement.innerHTML = Math.round((celsiusTemp * 9) / 5 + 32);
+}
+
+function celsiusChange(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector(".temp");
+  tempElement.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
 search("Zvenyhorod");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", fahrenheitChange);
+
+let celsiusLink = document.querySelector("#celcius-link");
+celsiusLink.addEventListener("click", celsiusChange);
