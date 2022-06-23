@@ -114,3 +114,40 @@ fahrenheitLink.addEventListener("click", fahrenheitChange);
 
 let celsiusLink = document.querySelector("#celcius-link");
 celsiusLink.addEventListener("click", celsiusChange);
+
+//example cities
+let newYorkcity = document.querySelector("#new-york-city");
+newYorkcity.addEventListener("click", newYorkSubmit);
+
+function newYorkSubmit(event) {
+  event.preventDefault();
+  let city = "new york";
+  search(city);
+}
+
+let londoncity = document.querySelector("#london-city");
+londoncity.addEventListener("click", londonSubmit);
+
+function londonSubmit(event) {
+  event.preventDefault();
+  let city = "london";
+  search(city);
+}
+
+let pariscity = document.querySelector("#paris-city");
+pariscity.addEventListener("click", parisSubmit);
+
+function parisSubmit(event) {
+  event.preventDefault();
+  let city = "paris";
+  search(city);
+}
+
+let tokyocity = document.querySelector("#tokyo-city");
+tokyocity.addEventListener("click", tokyoSubmit);
+
+function tokyoSubmit(event) {
+  event.preventDefault();
+  let city = "tokyo";
+  search(city);
+}

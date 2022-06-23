@@ -9,17 +9,23 @@ body {
 }
 
 .weather-app {
-  padding: 40px;
-  padding-bottom: 30px;
+  padding: 30px;
+  padding-bottom: 25px;
   border: 0px solid rgb(147, 98, 147);
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: rgba(122, 72, 137, 0.12);
 
-  box-shadow: 0 30px 50px rgba(49, 38, 74, 0.14);
+  box-shadow: 0 30px 40px rgba(82, 31, 73, 0.18);
+}
+
+.inside-border {
+  border: 1.2px solid rgba(168, 123, 168, 0.8);
+  border-radius: 5px;
+  padding: 40px;
 }
 
 .weather-app-wrap {
-  max-width: 650px;
+  max-width: 700px;
   margin: 50px auto;
 }
 
@@ -30,7 +36,7 @@ body {
 .source {
   text-align: center;
   font-size: 90%;
-  margin-top: 40px;
+  margin-top: 20px;
   line-height: 13px;
 }
 
@@ -127,6 +133,8 @@ li {
 
 .extra {
   line-height: 25px;
+  margin-left: 5px;
+  margin-top: -4px;
 }
 
 .sign-extra {
@@ -135,4 +143,49 @@ li {
 
 .updated {
   color: rgb(97, 97, 97);
+}
+
+.example-cities {
+  text-decoration: none;
+  color: rgb(212, 59, 212);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.example-cities:hover {
+  text-decoration: none;
+  color: rgb(212, 59, 212);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.active-city {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.active-city:hover {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 30px;
 }
