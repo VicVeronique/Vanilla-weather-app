@@ -15,84 +15,147 @@
     <script src="https://kit.fontawesome.com/26ca276c9e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
+  
   <body>
     <div class="container">
       <div class="weather-app-wrap">
         <div class="weather-app">
           <div class="inside-border">
+           
             <div class="row">
               <div class="col-3"><a href="" class="example-cities" id="new-york-city">NEW YORK</a></div>
               <div class="col-3"><a href="" class="example-cities" id="london-city">LONDON</a></div>
               <div class="col-3"><a href="" class="example-cities" id="paris-city">PARIS</a></div>
               <div class="col-3"><a href="" class="example-cities" id="tokyo-city">TOKYO</a></div>
-            </div>
-          <div class="row">
-            <div class="col-7">
-              <div class="overview">
-                <h1 id="city"></h1>
-                <ul>
-                  <li>
+            </div>        
+
+            <div class="row">
+              <div class="col-7">
+                <div class="overview">
+                  <h1 id="city"></h1>
+                  <ul>
+                    <li>
                     <span class="updated">Last updated:</span>
                     <span id="day-time"></span>
-                  </li>
-                  <li id="date"></li>
-                </ul>
+                    </li>
+                    <li id="date"></li>
+                  </ul>
+                </div>
               </div>
-            </div>
-
-            <div class="col-5">
-              <form id="search-form">
-                <input
+              <div class="col-5">
+                <form id="search-form">
+                  <input
                   type="search"
                   placeholder="type a city.."
                   class="form-control"
                   id="city-input"
-                />
-              </form>
+                  />
+                </form>
+              </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-7">
-              <div class="row">
-                <div class="col-4">
-                  <img
+            <div class="row">
+              <div class="col-7">
+                <div class="row">
+                  <div class="col-4">
+                    <img
                     class="weather-img"
                     id="icon"
                     src="images/cloud.png"
                     alt="partly_cloudy"
                     srcset=""
-                  />
-                </div>
-                <div class="col-8">
-                  <div class="units">
-                    <ul>
-                      <li>
-                        <strong class="temp"></strong>
-                        <small class="temp-units">
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="units">
+                      <ul>
+                        <li>
+                          <strong class="temp"></strong>
+                          <small class="temp-units">
                           <a href="" id="celcius-link" class="active">°C</a>
                           |
                           <a href="" id="fahrenheit-link" class="passive">°F</a>
-                        </small>
-                      </li>
-                      <li id="description"></li>
-                    </ul>
+                          </small>
+                        </li>
+                        <li id="description"></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-5">
-              <ul>
-                
-                <li class="extra"><i class="fa-solid fa-droplet sign"> </i> <span class="sign-extra"> humidity: </span> <span id="humidity"></span>%</li>
-                <li class="extra">
+              <div class="col-5">
+                <ul>
+                  <li class="extra"><i class="fa-solid fa-droplet sign"> </i> <span class="sign-extra"> humidity: </span> <span id="humidity"></span>%</li>
+                  <li class="extra">
                   <i class="fa-solid fa-wind sign"> </i><span class="sign-extra"> wind: </span><span id="wind"></span
-                  ><span class="seconds"> km/h</span>
-                </li>
-              </ul>
+                    ><span class="seconds"> km/h</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          
+            <div class="weather-forecast">
+              <div class="row">
+                
+                <div class="col-2">
+                  <div class="date">Sat</div>
+                  <img src="" alt="">
+                  <div class="temperature-forecast">
+                    <span class="max-temp-forecast">30</span>
+                    <span class="min-temp-forecast">18</span>
+                  </div>
+                </div>
+
+                <div class="col-2">
+                  <div class="date">Sat</div>
+                  <img src="" alt="">
+                  <div class="temperature-forecast">
+                    <span class="max-temp-forecast">30</span>
+                    <span class="min-temp-forecast">18</span>
+                  </div>
+                </div>
+
+                <div class="col-2">
+                  <div class="date">Sat</div>
+                  <img src="" alt="">
+                  <div class="temperature-forecast">
+                    <span class="max-temp-forecast">30</span>
+                    <span class="min-temp-forecast">18</span>
+                  </div>
+                </div>
+
+                <div class="col-2">
+                  <div class="date">Sat</div>
+                  <img src="" alt="">
+                  <div class="temperature-forecast">
+                    <span class="max-temp-forecast">30</span>
+                    <span class="min-temp-forecast">18</span>
+                  </div>
+                </div>
+
+                <div class="col-2">
+                  <div class="date">Sat</div>
+                  <img src="" alt="">
+                  <div class="temperature-forecast">
+                    <span class="max-temp-forecast">30</span>
+                    <span class="min-temp-forecast">18</span>
+                  </div>
+                </div>
+
+                <div class="col-2">
+                  <div class="date">Sat</div>
+                  <img src="" alt="">
+                  <div class="temperature-forecast">
+                    <span class="max-temp-forecast">30</span>
+                    <span class="min-temp-forecast">18</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
-          </div>
+          
           <div class="source">
             <small>
               <a
@@ -110,6 +173,7 @@
               ">Netlify</a>
             </small>
           </div>
+
         </div>
       </div>
     </div>
