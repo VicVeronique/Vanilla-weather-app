@@ -204,7 +204,8 @@ li {
 }
 
 .weather-forecast .date {
-  font-weight: bold;
+  font-weight: 100;
+  color: black;
 }
 
 .weather-forecast .min-temp-forecast {
