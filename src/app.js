@@ -44,6 +44,27 @@ function formatDate(timestamp) {
   return `${month} ${dateDay}, ${year}`;
 }
 
+function showForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = "";
+  forecastHTML = `
+              <div class="row">
+                <div class="col-2">
+                  <div class="forecast-wrap">
+                  <div class="date">Friday</div>
+                  <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42">
+                  <div class="temperature-forecast">
+                    <span class="max-temp-forecast">30</span>
+                    <span class="min-temp-forecast">18</span>
+                  </div>
+                  </div>
+                </div>           
+              </div>
+              `;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemp(response) {
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
@@ -151,3 +172,5 @@ function tokyoSubmit(event) {
   let city = "tokyo";
   search(city);
 }
+
+showForecast();
